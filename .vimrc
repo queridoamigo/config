@@ -15,6 +15,9 @@ set mouse=
 set shiftwidth:2
 set shell=bash\ --login
 :let g:airline_theme='bubblegum'
+:let g:gitgutter_enabled = 0
+:let g:vim_tags_auto_generate = 1
+set updatetime=250
 
 if version >= 700
     set history=64
@@ -63,6 +66,8 @@ highlight ColorColumn ctermbg=grey
 	Bundle 'majutsushi/tagbar'
 	Bundle 'rlue/vim-getting-things-down'
 	Bundle 'johngrib/vim-game-code-break'
+	Bundle 'junegunn/fzf.vim'
+	Bundle 'airblade/vim-gitgutter'
 "FI plugins
 
 "IF maps
@@ -70,6 +75,7 @@ highlight ColorColumn ctermbg=grey
 	let mapleader = "'"
 	nnoremap <F5> :UndotreeToggle<CR>
 	nnoremap <F8> :TagbarToggle<CR>
+	nnoremap <F4> :GitGutterToggle<CR>
 	map <C-n> :NERDTreeToggle<CR>
 	map <F7> :NERDTreeFind<CR>
 	nnoremap <silent> <Leader>1 :resize +10<CR>
