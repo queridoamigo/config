@@ -68,6 +68,7 @@ highlight ColorColumn ctermbg=grey
 	Bundle 'johngrib/vim-game-code-break'
 	Bundle 'junegunn/fzf.vim'
 	Bundle 'airblade/vim-gitgutter'
+	Bundle 'ervandew/supertab'
 "FI plugins
 
 "IF maps
