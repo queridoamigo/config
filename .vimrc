@@ -17,6 +17,9 @@ set shell=bash\ --login
 :let g:airline_theme='bubblegum'
 :let g:gitgutter_enabled = 0
 :let g:vim_tags_auto_generate = 1
+:let w:highlightid = matchadd('Special', '\<TY PIDOR\>')
+:let w:highlightid = matchadd('Special', '\<TY MYDAK\>')
+:let w:highlightid = matchadd('Special', '\<var_dump\>')
 set updatetime=250
 
 if version >= 700
