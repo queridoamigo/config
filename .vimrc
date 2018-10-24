@@ -96,7 +96,7 @@ highlight ColorColumn ctermbg=grey
 "FI abbrevs
 
 "IF PHP autocomplete plugin 
-	autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
+	"autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
 "FI PHP autocomplete plugin 
 
 "IF NERDTree
