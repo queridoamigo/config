@@ -13,7 +13,7 @@ set ignorecase
 set smartcase
 set mouse=
 set shiftwidth:2
-set shell=bash\ --login
+set shell=zsh\ --login
 :let g:airline_theme='bubblegum'
 :let g:gitgutter_enabled = 0
 :let g:vim_tags_auto_generate = 1
@@ -35,6 +35,7 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=grey
 
 :colorscheme vimnicedark 
+":colorscheme manxome
 
 "IF VUNDLE
 	set nocompatible
@@ -72,6 +73,7 @@ highlight ColorColumn ctermbg=grey
 	"Bundle 'junegunn/fzf.vim'
 	Bundle 'airblade/vim-gitgutter'
 	Bundle 'ervandew/supertab'
+	"Bundle 'junegunn/limelight.vim'
 "FI plugins
 
 "IF maps
