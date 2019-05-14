@@ -1,4 +1,5 @@
 syntax on
+filetype on
 set number
 set wrap
 set tabstop=2
@@ -17,9 +18,9 @@ set shell=zsh\ --login
 :let g:airline_theme='bubblegum'
 :let g:gitgutter_enabled = 0
 :let g:vim_tags_auto_generate = 1
-:let w:highlightid = matchadd('Special', '\<TY PIDOR\>')
-:let w:highlightid = matchadd('Special', '\<TY MYDAK\>')
-:let w:highlightid = matchadd('Special', '\<var_dump\>')
+":let w:highlightid = matchadd('Special', '\<TY PIDOR\>')
+":let w:highlightid = matchadd('Special', '\<TY MYDAK\>')
+":let w:highlightid = matchadd('Special', '\<var_dump\>')
 set updatetime=250
 
 if version >= 700
@@ -87,6 +88,7 @@ highlight ColorColumn ctermbg=grey
 	nnoremap <silent> <Leader>1 :resize +10<CR>
 	nnoremap <silent> <Leader>2 :resize -10<CR>
 	nnoremap <silent> <Leader>3 :call clearmatches()<CR>
+	nnoremap <silent> <Leader>4 :%s/https:\/\/ssp.adtech.rambler.ru\/campaigns\/client\/[0-9].*\///g<CR>
 "FI maps
 
 "IF abbrevs
