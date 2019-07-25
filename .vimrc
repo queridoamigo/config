@@ -74,6 +74,8 @@ highlight ColorColumn ctermbg=grey
 	"Bundle 'junegunn/fzf.vim'
 	Bundle 'airblade/vim-gitgutter'
 	Bundle 'ervandew/supertab'
+	"Bundle 'mhinz/vim-startify'
+	"Bundle 'ryanoasis/vim-devicons'
 	"Bundle 'junegunn/limelight.vim'
 "FI plugins
 
