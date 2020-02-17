@@ -14,6 +14,7 @@ set ignorecase
 set smartcase
 set mouse=
 set shiftwidth:2
+set notagbsearch
 set shell=zsh\ --login
 :let g:airline_theme='bubblegum'
 :let g:gitgutter_enabled = 0
