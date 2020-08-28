@@ -15,13 +15,12 @@ set smartcase
 set mouse=
 set shiftwidth:2
 set notagbsearch
+set noshowmode
 set shell=zsh\ --login
+
 :let g:airline_theme='bubblegum'
 :let g:gitgutter_enabled = 0
 :let g:vim_tags_auto_generate = 1
-":let w:highlightid = matchadd('Special', '\<TY PIDOR\>')
-":let w:highlightid = matchadd('Special', '\<TY MYDAK\>')
-":let w:highlightid = matchadd('Special', '\<var_dump\>')
 set updatetime=250
 
 if version >= 700
@@ -59,29 +58,19 @@ highlight ColorColumn ctermbg=grey
 	Bundle 'alvan/vim-php-manual'
 	Bundle 'Shougo/vimproc'
 	Bundle 'Shougo/unite.vim'
-	"Bundle 'tomtom/checksyntax_vim'
 	Bundle 'mbbill/undotree'
 	Bundle 'tpope/vim-fugitive'
 	Bundle 'gregsexton/gitv'
-	"Bundle 'vim-scripts/dbext.vim'
-	"Bundle 'vim-scripts/SQLComplete.vim'
-	"Bundle 'vim-scripts/SearchComplete'
 	Bundle 'kshenoy/vim-signature'
 	Bundle 'queridoamigo/vimnicedark'
 	Bundle 'szw/vim-tags'
 	Bundle 'majutsushi/tagbar'
 	Bundle 'rlue/vim-getting-things-down'
-	"Bundle 'johngrib/vim-game-code-break'
-	"Bundle 'junegunn/fzf.vim'
 	Bundle 'airblade/vim-gitgutter'
 	Bundle 'ervandew/supertab'
-	"Bundle 'mhinz/vim-startify'
-	"Bundle 'ryanoasis/vim-devicons'
-	"Bundle 'junegunn/limelight.vim'
 "FI plugins
 
 "IF maps
-	"let maplocalleader = ","
 	let mapleader = "'"
 	nnoremap <F5> :UndotreeToggle<CR>
 	nnoremap <F8> :TagbarToggle<CR>
@@ -101,10 +90,6 @@ highlight ColorColumn ctermbg=grey
 	ab tdl <Tab>* TODO
 	ab ech echo "<br /> -".$."<br />";
 "FI abbrevs
-
-"IF PHP autocomplete plugin 
-	"autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
-"FI PHP autocomplete plugin 
 
 "IF NERDTree
 	autocmd StdinReadPre * let s:std_in=1
